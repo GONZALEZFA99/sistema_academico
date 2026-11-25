@@ -17,10 +17,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from core.views import InicioView
 
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("academico/", include("academico.urls")),
+    path("academico/", include("academico.urls")),  
+    path("", InicioView.as_view(), name="inicio"),
 ]

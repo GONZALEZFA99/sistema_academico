@@ -8,7 +8,9 @@ __pycache__/
 *.pyc
 
 # Base de datos local
-db.sqlite3
+
+*.sqlite3
+
 
 # Archivos privados
 .env
